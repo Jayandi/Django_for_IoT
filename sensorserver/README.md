@@ -9,7 +9,6 @@ Based on https://github.com/dmt0768/django_MQTT
 
 - sqlwriter.py -- MQTT client program file (based on paho MQTT client). It subscribes to MQTT broker's topics and writes every new message in SQLite database in the file *server*
 
-- start_total.py -- It just runs Django web-server with the only command without activating venv, etc... (*./start_total.py*)
 
 ## How to use
 
