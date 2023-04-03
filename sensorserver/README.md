@@ -1,6 +1,6 @@
 # django_MQTT
 It is an example of a server being MQTT-client, which can show MQTT messages via web-interface. SQLite is used as a database.
-based on https://github.com/dmt0768/django_MQTT
+Based on https://github.com/dmt0768/django_MQTT
 
 ## Files description
 - venv -- Python virtual environment 
