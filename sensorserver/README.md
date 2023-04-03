@@ -1,10 +1,11 @@
 # django_MQTT
 It is an example of a server being MQTT-client, which can show MQTT messages via web-interface. SQLite is used as a database.
+based on https://github.com/dmt0768/django_MQTT
 
 ## Files description
-- venv -- Python virtual environment
+- venv -- Python virtual environment 
 
-- server -- Django server file
+- projectmqtt -- Django server file
 
 - sqlwriter.py -- MQTT client program file (based on paho MQTT client). It subscribes to MQTT broker's topics and writes every new message in SQLite database in the file *server*
 
