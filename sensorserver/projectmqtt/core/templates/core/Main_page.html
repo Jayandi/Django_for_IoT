@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Sensor v.0.1</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/main_page.css' %}?{% now "U" %}">
+</head>
+<body>
+    <h1>Log Sensor v.0.1</h1>
+    <h2>
+        Daftar Data
+    </h2>
+<div>
+
+
+</div>
+<textarea id = "texraread" readonly>...</textarea>
+
+
+    
+<script>
+    function load() {
+        var xhr = new XMLHttpRequest();
+        var url = new URL('qq://load/');
+
+        xhr.onload = function() {
+            var serverResponse = document.getElementById("texraread")
+            serverResponse.innerHTML = this.responseText
+            }
+        xhr.open("GET", url.toString().slice(5), true)
+        xhr.send()
+                    }
+    setInterval(function(){
+        load();
+    },2000)
+</script>
+</body>
+</html>
