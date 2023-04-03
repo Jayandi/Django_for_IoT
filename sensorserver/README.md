@@ -23,5 +23,6 @@ For propper using, you should connect your MQTT-client with MQTT-broker. Set new
 2) Launch Django web-server
 
 ```
-./start_total.py
+cd projectmqtt
+./manage.py runserver
 ```
